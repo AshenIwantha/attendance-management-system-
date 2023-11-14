@@ -1,0 +1,24 @@
+:root {
+    --gap: 0.5rem;
+    --padding: 0.5rem;
+}
+
+.my_masonry_grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: calc(var(--gap) * -1); /* gutter size offset */
+    width: auto;
+    padding: var(--padding);
+}
+.my_masonry_grid_column {
+    padding-left: var(--gap); /* gutter size */
+    background-clip: padding-box;
+}
+
+/* Style your items */
+.my_masonry_grid_column > div {
+    /* change div to reference your elements you put in <Masonry> */
+    /* background: grey; */
+    margin-bottom: var(--gap);
+}
